@@ -3,14 +3,16 @@ class Anagram
   
   def initialize(word)
     @word = word
+    @anagrams = []
   end
   
   def match(array)
     array.map do |w|
       if w.split("") == word
-        array 
+        @anagrams << w 
+        @anagrams
       else
-        []
+        @anagrams
       end 
     end 
   end
