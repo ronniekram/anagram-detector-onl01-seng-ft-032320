@@ -8,9 +8,9 @@ class Anagram
   def match(array)
     array.map do |w|
       if w.split("") == word
-        true 
+        array 
       else
-        false
+        []
       end 
     end 
   end
