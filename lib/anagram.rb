@@ -5,12 +5,15 @@ class Anagram
     @word = word
   end
   
+
   def match(array)
-    word.split("").sort
-    if word == array.map {|w| w.split("").sort}
-      @@all << w 
-    end
-      @@all
-  end
+    array.map do |w|
+      if word.split("").sort == w.split("").sort
+        @@all << w 
+      else
+        @@all
+      end
+    end 
+  end 
   
 end 
