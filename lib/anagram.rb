@@ -8,10 +8,10 @@ class Anagram
   def match(array)
     array.map do |w|
       if w.split("") == word
-        @all << w 
-        @all
+        @@all << w 
+        @@all
       else
-        @all
+        @@all
       end 
     end 
   end
