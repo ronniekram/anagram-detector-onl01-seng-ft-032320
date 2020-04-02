@@ -10,5 +10,7 @@ class Anagram
     if word == array.map {|w| w.split("").sort}
       anagrams << w 
     end
+      anagrams
   end
+  
 end 
