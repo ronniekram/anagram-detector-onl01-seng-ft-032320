@@ -9,8 +9,6 @@ class Anagram
     word.split("").sort
     if word == array.map {|w| w.split("").sort}
       return array 
-    else
-    return array
     end
   end
 end 
