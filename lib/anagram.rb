@@ -6,5 +6,12 @@ class Anagram
   end
   
   def match(array)
-  end 
+    array.map do |w|
+      if w.split("") == word
+        true 
+      else
+        false
+      end 
+    end 
+  end
 end 
