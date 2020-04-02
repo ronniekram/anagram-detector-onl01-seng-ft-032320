@@ -6,13 +6,5 @@ class Anagram
   end
   
   def match(array)
-    array.map do |w|
-      if w.split("") == word
-        @@all << w 
-        @@all
-      else
-        @@all
-      end 
-    end 
   end
 end 
